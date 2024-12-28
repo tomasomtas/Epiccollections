@@ -1,7 +1,7 @@
 # Epiccollections
 HTML y CSS de proyecto web Epic collections
 
-## Link: 
+## Link:  https://tomasomtas.github.io/Epiccollections/ 
 
 ## Nombre del Proyecto
 Epic Collections
