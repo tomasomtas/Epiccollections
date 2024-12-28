@@ -18,9 +18,8 @@ Ing. Beorlegui Diego Tomás
 ## Tecnologías Utilizadas
 - HTML
 - CSS
-
-## Tecnologías a Aplicar para Terminar la Página
 - JavaScript
+## Tecnologías a Aplicar para Terminar la Página
 - MySQL
 - Java
 
