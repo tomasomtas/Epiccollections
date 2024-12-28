@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
     <title>CD'S coleccionables - Ofertas del Mes</title>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
@@ -8,110 +8,103 @@
     <meta name="description" content="cd's de colección, ofertas del Mes">
     <meta name="keywords" content="cds,juegos,cartas,colecciones">
     <meta name="author" content="Ing.Tomas">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cdsMetal&Rock.html">Cd's Power Metal</a></li>
-                    <li><a href="juegosDeMesa.html">Juegos de mesa</a></li>
-                    <li><a href="literaturaFantastica.html">Literatura fantástica</a></li>
-                    <li><a href="cartasColeccionables.html">Cartas RPG Magic The Gathering</a></li>
-                    <li><a href="Contactanos.html">Contáctanos</a></li>
-                    <li class="login-container">
-                        <form id="login-form">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="password">Contraseña:</label>
-                            <input type="password" id="password" name="password" required>
-                            <button type="submit">Iniciar sesión</button>
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <h2 class="h2">Power Metal - CD's coleccionables</h2>
-            <article class="articulo-genero">
-                <h3 class="h3">Ambienta tus momentos de lectura y juegos con música épica</h3>
-                <p>¿Quién dijo que el cd murió?¿no habíamos escuchado lo mismo del vinilo? estas obras maestras de la música pesada se coleccionan, por su arte de tapa, 
-                    porque son difíciles de conseguir en buen estado, y porque no debe morir el ritual de insertar un cd en el lector de un equipo, 
-                    leer el libro con las letras y escuchar un disco de corrido, tema por tema.</p>
-            </article>
-            <section id="cds">
-                <h3 class="h3">Ofertas del Mes</h3>
-                <div class="cd">
-                    <div class="cd-header">
-                        <img src="111.jpg" alt="disco 1">
-                        <div class="reseña">
-                        <h3>Tales from the Twilight World - Blind Guardian</h3>
-                    </div>
-                        <p>Tales from the Twilight World es el tercer disco del grupo alemán de power metal Blind Guardian. 
-                            El disco está compuesto de 10 canciones y salió a la venta en 1990. Destacan los temas «Welcome to Dying», «Lost in the Twilight Hall» y «Lord of the Rings», 
-                            destaca también la colaboración del ex Helloween y actual cantante de Gamma Ray, Kai Hansen.Disco fundamental en el entorno del power metal alemán. Muy recomendable.Juan Lincht (Baterísta de doble pedal)</p>
-                    </div>
-                    <div class="precio">
-                        <p>$27.000</p>
-                        <button>Comprar</button>
+    <body id="cd">
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cdsMetal&Rock.html">Cd's Power Metal</a></li>
+                <li><a href="juegosDeMesa.html">Juegos de mesa</a></li>
+                <li><a href="literaturaFantastica.html">Literatura fantástica</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li class="login-container">
+                    <form id="login-form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit">Iniciar sesión</button>
+                    </form>
+                </li>
+                <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-3x"></i> Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="h2">Power Metal - CD's coleccionables</h2>
+        <article class="articulo-genero">
+            <h3 class="h3">Ambienta tus momentos de lectura y juegos con música épica</h3>
+            <p>¿Quién dijo que el cd murió? ¿No habíamos escuchado lo mismo del vinilo? Estas obras maestras de la música pesada se coleccionan por su arte de tapa, 
+                porque son difíciles de conseguir en buen estado, y porque no debe morir el ritual de insertar un cd en el lector de un equipo, 
+                leer el libro con las letras y escuchar un disco de corrido, tema por tema.</p>
+        </article>
+            <h3 class="ofertas-del-mes">Ofertas del Mes</h3>
+        <section id="cds" class="grid-container">
+            <div class="cd-item" data-id="1">
+                <img src="images/111.jpg" alt="disco 1">
+                <button class="info-btn" data-id="1">Más información!</button>
+                <div class="cd-info">
+                    <h3>Tales from the Twilight World</h3>
+                    <p class="autor">Blind Guardian</p>
+                    <p><i>"Tales from the Twilight World es el tercer disco del grupo alemán de power metal Blind Guardian..."</i></p>
+                    <div class="cd-footer">
+                        <p class="precio">$27000</p>
+                        <button class="add-to-cart" data-id="1">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="cd">
-                    <div class="cd-header">
-                    <img src="222.jpg" alt="disco 2">
-                    <div class="reseña">
-                        <h3>Glory to the Brave - Hammerfall</h3>
-                    </div>
-                        <p>Glory to the brave es el primer disco de la banda sueca de Heavy Metal HammerFall, editado en 1997. 
-                            Fue su primer álbum a pesar del hecho de que la banda se formó en 1993 y hasta entonces interpretaban música en directo y covers.
-                            Altamente recomendado por ser uno de los mejores exponentes del power metal sueco de finales de los 90's. Pablo Soler (Guitarrista virtuoso)</p>
-                    </div>
-                    <div class="precio">
-                        <p>$23.000</p>
-                        <button>Comprar</button>
+            </div>
+            <div class="cd-item" data-id="2">
+                <img src="images/222.jpg" alt="disco 2">
+                <button class="info-btn" data-id="2">Más información!</button>
+                <div class="cd-info">
+                    <h3>Glory to the Brave</h3>
+                    <p class="autor">HammerFall</p>
+                    <p><i>"Glory to the Brave es el primer disco de la banda sueca de Heavy Metal HammerFall..."</i></p>
+                    <div class="cd-footer">
+                        <p class="precio">$23000</p>
+                        <button class="add-to-cart" data-id="2">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="cd">
-                    <div class="cd-header">
-                    <img src="333.jpg" alt="disco 3">
-                    <div class="reseña">
-                        <h3>The fourth legacy - Kamelot</h3>
-                    </div>
-                        <p>The Fourth Legacy es el cuarto álbum de estudio de la banda estadounidense de power metal Kamelot. 
-                            Fue lanzado en 1999 por Noise Records/Modern Music, y para muchos, es reconocido como el mejor album de la banda, 
-                            destacando la poderosa voz de Roy Khan y la colaboración de la cantante lírica Cinzia Rizzo. Altamente recomendado. Sandra O'Connor (cantante lírica)</p>
-                    </div>
-                    <div class="precio">
-                        <p>$30.000</p>
-                        <button>Comprar</button>
+            </div>
+            <div class="cd-item" data-id="3">
+                <img src="images/333.jpg" alt="disco 3">
+                <button class="info-btn" data-id="3">Más información!</button>
+                <div class="cd-info">
+                    <h3>The Fourth Legacy</h3>
+                    <p class="autor">Kamelot</p>
+                    <p><i>"The Fourth Legacy es el cuarto álbum de estudio de la banda estadounidense de power metal Kamelot..."</i></p>
+                    <div class="cd-footer">
+                        <p class="precio">$30000</p>
+                        <button class="add-to-cart" data-id="3">Agregar al carrito</button>
                     </div>
                 </div>
-                <div class="cd">
-                    <div class="cd-header">
-                    <img src="444.jpg" alt="disco 4">
-                    <div class="reseña">
-                        <h3>The damnation game - Symphony X</h3>
-                    </div>
-                        <p>The Damnation Game es el segundo álbum del grupo Symphony X cuál surgió solamente ocho meses después de su primer álbum, Symphony X. 
-                            Con Rusell Allen como nueva voz y la técnica llamativa del virtuoso Michael Romeo en guitarra, este disco supo cautivar el oído de los ya exigentes enamorados del género metal progresivo, 
-                            cuyos exponentes sobresalientes de este género virtuoso, eran ni más ni menos que unos tales "Dream Theater".Recomendado. Lucas Zamarbide (cantante de rock&blues)</p>
-                    </div>
-                    <div class="precio">
-                        <p>$21.000</p>
-                        <button>Comprar</button>
+            </div>
+            <div class="cd-item" data-id="4">
+                <img src="images/444.jpg" alt="disco 4">
+                <button class="info-btn" data-id="4">Más información!</button>
+                <div class="cd-info">
+                    <h3>The Damnation Game</h3>
+                    <p class="autor">Symphony X</p>
+                    <p><i>"The Damnation Game es el segundo álbum del grupo Symphony X..."</i></p>
+                    <div class="cd-footer">
+                        <p class="precio">$21000</p>
+                        <button class="add-to-cart" data-id="4">Agregar al carrito</button>
                     </div>
                 </div>
-            </section>
-        </main>
-            <footer class="footer">
-                <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="gorjeo.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-                </div>
-                <p class="parrafoFinal">
-                    2024 Epic Collections. Todos los derechos reservados.
-                </p>
-            </footer>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/gorjeo.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+        <p class="parrafoFinal">2024 Epic Collections. Todos los derechos reservados.</p>
+    </footer>
+        <div id="mensaje-notificacion" class="mensaje-notificacion"></div>
+        <script src="script.js" defer></script>
     </body>
 </html>
