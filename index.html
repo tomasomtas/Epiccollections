@@ -9,6 +9,7 @@
     <meta name="description" content="esta página trata sobre compra y venta de coleccionables y hobbies">
     <meta name="keywords" content="cds,juegos,cartas,colecciones">
     <meta name="author" content="Ing.Tomas">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <header>
@@ -18,8 +19,7 @@
           <li><a href="cdsMetal&Rock.html">Cd's Power Metal</a></li>
           <li><a href="juegosDeMesa.html">Juegos de mesa</a></li>
           <li><a href="literaturaFantastica.html">Literatura fantástica</a></li>
-          <li><a href="cartasColeccionables.html">Cartas RPG Magic The Gathering</a></li>
-          <li><a href="Contactanos.html">Contáctanos</a></li>
+          <li><a href="contactanos.html">Contáctanos</a></li>
           <li class="login-container">
             <form id="login-form">
               <label for="email">Email:</label>
@@ -29,27 +29,47 @@
               <button type="submit">Iniciar sesión</button>
             </form>
           </li>
+          <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-3x"></i> Carrito</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1 class="title">Epic Collections</h1>
-      <h2 class="h2">Música, literatura y hobbies</h2>
-      <p class="parrafo">
-        "Explora el baúl de Tom Bombadil, en el encontrarás juegos de mesa,
-        literatura fantástica y CDs de música épica para crear una atmósfera de
-        tierras mágicas e inexploradas."
-      </p>
-      <section class="gallery">
-        <img class="gallery__a" src="a.jpg" alt="Guerrero y cuervo">
-        <img class="gallery__a" src="b.jpg" alt="Dragón">
-        <img class="gallery__a" src="c.jpg" alt="Reina y rosas">
-        <img class="gallery__a" src="d.jpg" alt="Portal">
-        <img class="gallery__a" src="e.jpg" alt="Dama y dragón">
-        <img class="gallery__a" src="f.jpg" alt="Mago">
-        <img class="gallery__a" src="i.jpg" alt="Brujo">
-      </section>
-      <section id="registro">
+        <h1 class="title">Epic Collections</h1>
+        <h2 class="h2">Música, literatura y hobbies</h2>
+        <p class="parrafo">
+          "Explora el baúl de Tom Bombadil, en el encontrarás juegos de mesa,
+          literatura fantástica y CDs de música épica para crear una atmósfera de
+          tierras mágicas e inexploradas."
+        </p>
+        <section class="button-container">
+          <a href="clientesDelMes.html" class="button-clientes">
+            <span>Clientes del mes - haz click en la imagen!</span> <i class="fas fa-arrow-down"></i>
+          </a>
+        </section>
+        <section class="gallery">
+          <a href="clientesDelMes.html">
+            <img class="gallery__a" src="images/a.jpg" alt="Guerrero y cuervo">
+          </a>
+          <a href="clientesDelMes.html">
+            <img class="gallery__a" src="images/b.jpg" alt="Dragón">
+          </a>
+          <a href="clientesDelMes.html">
+            <img class="gallery__a" src="images/c.jpg" alt="Reina y rosas">
+          </a>
+          <a href="clientesDelMes.html">
+            <img class="gallery__a" src="images/d.jpg" alt="Portal">
+          </a>
+          <a href="clientesDelMes.html">
+            <img class="gallery__a" src="images/e.jpg" alt="Dama y dragón">
+          </a>
+          <a href="clientesDelMes.html">
+            <img class="gallery__a" src="images/f.jpg" alt="Mago">
+          </a>
+          <a href="clientesDelMes.html">
+            <img class="gallery__a" src="images/i.jpg" alt="Brujo">
+          </a>
+        </section>
+        <section id="registro">
         <h2 class="h2">Crear una Cuenta</h2>
         <p class="parrafo">
           Compra artículos en nuestra tienda virtual, recibe novedades por
@@ -73,15 +93,6 @@
             nuestra selección de literatura fantástica. Desde clásicos hasta
             nuevas sagas, tenemos libros para todos los amantes del género.En la
             sección literaturaFantastica encontrarás las ofertas del mes.
-          </p>
-        </article>
-        <article>
-          <h3>Cartas Coleccionables Magic The Gathering</h3>
-          <p class="parrafo">
-            Explora nuestra colección de cartas del juego más popular de todos
-            los tiempos, ideales tanto para jugar como para coleccionar. En la
-            sección cartasMagic traemos material sobre últimas expansiones y
-            booster pack sellado de 36 boosters .
           </p>
         </article>
         <article>
@@ -113,12 +124,30 @@
     </aside>
     <footer class="footer">
         <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.twitter.com" target="_blank"><img src="gorjeo.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/gorjeo.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
         </div>
       <p class="parrafoFinal">
         2024 Epic Collections. Todos los derechos reservados.
     </footer>
+    <script>
+    const images = document.querySelectorAll('.gallery__a');
+    images.forEach(image => {
+    image.addEventListener('mouseenter', () => {
+        images.forEach(img => img.classList.remove('active'));
+        image.classList.add('active');
+      });
+    });
+    images.forEach(image => {
+    image.addEventListener('mouseleave', () => {
+        image.classList.remove('active');
+      });
+    });
+    </script>
+    <script src="script.js" type="module" defer></script>
+    <script src="script2.js" type="module" defer></script>
+    <script src="script3.js" type="module" defer></script>
+    
   </body>
-</html> 
+</html>
