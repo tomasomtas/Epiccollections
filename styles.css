@@ -1207,13 +1207,12 @@ h3:hover {
 
 .descripcion-ampliada.visible {
     display: block;
-    transition: all 0.5s ease;  /* Animación suave para el cambio de visibilidad */
+    transition: all 0.5s ease;  
     margin-top: 10px;
     font-size: 14px;
     color: white;
 }
 
-/* Estilo para la descripción cuando está oculta */
 .descripcion-ampliada.hidden {
     display: none;
 }
