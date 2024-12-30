@@ -3,7 +3,7 @@ let productos = [];
 
 const cargarProductosDesdeJSON = async () => {
     try {
-        const response = await fetch('productos.JSON');
+        const response = await fetch('productos.json');
         if (!response.ok) {
             throw new Error('Error al cargar los productos');
         }
