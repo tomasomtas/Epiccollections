@@ -543,7 +543,8 @@ h2.h2, h3.h3 {
     padding: 20px;
     background-color: #1e1e1e;
     border-radius: 8px;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto;
+    justify-items: center; /* Centra los elementos en la fila */
 }
 
 .ofertas-del-mes {
@@ -565,6 +566,11 @@ h2.h2, h3.h3 {
     overflow: hidden;
     padding: 15px;
     height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.cd-item:hover {
+    transform: translateY(-10px);
 }
 
 .cd-item img {
@@ -649,6 +655,10 @@ h2.h2, h3.h3 {
 
     .cd-footer .precio {
         margin-bottom: 10px;
+    }
+
+    .cd-info p {
+        font-size: 1em;
     }
 }
 
@@ -1185,6 +1195,28 @@ h3:hover {
     opacity: 1;
 }
 
+
+.descripcion-ampliada {
+    display: none;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.5;
+    transition: all 0.5s ease;
+}
+
+.descripcion-ampliada.visible {
+    display: block;
+    transition: all 0.5s ease;  /* Animación suave para el cambio de visibilidad */
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Estilo para la descripción cuando está oculta */
+.descripcion-ampliada.hidden {
+    display: none;
+}
 
 
 
