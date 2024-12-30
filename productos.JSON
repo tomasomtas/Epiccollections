@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Tales from the Twilight World",
+        "description": "Tales from the Twilight World es el tercer disco del grupo alemán de power metal Blind Guardian. El disco está compuesto de 10 canciones y salió a la venta en 1990. Destacan los temas «Welcome to Dying», «Lost in the Twilight Hall» y «Lord of the Rings», destaca también la colaboración del ex Helloween y actual cantante de Gamma Ray, Kai Hansen.Disco fundamental en el entorno del power metal alemán. Muy recomendable. Juan Lincht (Baterísta de doble pedal)",
+        "amount": 27000,
+        "image": "images/111.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Glory to the Brave",
+        "description": "Glory to the brave es el primer disco de la banda sueca de Heavy Metal HammerFall, editado en 1997. Fue su primer álbum a pesar del hecho de que la banda se formó en 1993 y hasta entonces interpretaban música en directo y covers.Altamente recomendado por ser uno de los mejores exponentes del power metal sueco de finales de los 90's .Pablo Soler (Guitarrista virtuoso)",
+        "amount": 23000,
+        "image": "images/222.jpg"
+    },
+    {
+        "id": 3,
+        "name": "The Fourth Legacy",
+        "description": "The Fourth Legacy es el cuarto álbum de estudio de la banda estadounidense de power metal Kamelot. Fue lanzado en 1999 por Noise Records/Modern Music, y para muchos, es reconocido como el mejor album de la banda, destacando la poderosa voz de Roy Khan y la colaboración de la cantante lírica Cinzia Rizzo. Altamente recomendado. Sandra O'Connor (cantante lírica)",
+        "amount": 30000,
+        "image": "images/333.jpg"
+    },
+    {
+        "id": 4,
+        "name": "The Damnation Game",
+        "description": "The Damnation Game es el segundo álbum del grupo Symphony X cuál surgió solamente ocho meses después de su primer álbum, Symphony X. Con Rusell Allen como nueva voz y la técnica llamativa del virtuoso Michael Romeo en guitarra, este disco supo cautivar el oído de los ya exigentes enamorados del género metal progresivo, cuyos exponentes sobresalientes de este género virtuoso, eran ni más ni menos que unos tales Dream Theater. Recomendado. Lucas Zamarbide (cantante de rock&blues)",
+        "amount": 21000,
+        "image": "images/444.jpg"
+    }
+]
