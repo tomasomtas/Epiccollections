@@ -47,23 +47,57 @@
             </div>
                 <p class="parrafoFinal">2024 Epic Collections. Todos los derechos reservados.</p>
         </footer>
-        <script > document.addEventListener('DOMContentLoaded', () => {
-            const form = document.getElementById('contactForm');
-            form.addEventListener('submit', (event) => {
-                event.preventDefault();
-                const nombre = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const mensaje = document.getElementById('message').value;
-                if (nombre && email && mensaje) {
-                    console.log("Todos los campos están completos.");
-                } else {
-                    console.log("Faltan campos por completar.");
-                }
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const form = document.getElementById('contactForm');
+                const errorElement = document.createElement('div');
+                errorElement.style.color = 'red'; 
+                form.appendChild(errorElement);
+            
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    
+                    
+                    errorElement.innerHTML = '';
+            
+                    
+                    const nombre = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const mensaje = document.getElementById('message').value.trim();
+            
+                    let valid = true;
+            
+                    
+                    if (nombre === '') {
+                        valid = false;
+                        errorElement.innerHTML += 'El nombre es obligatorio.<br>';
+                    }
+            
+                    
+                    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                    if (email === '' || !emailRegex.test(email)) {
+                        valid = false;
+                        errorElement.innerHTML += 'El correo electrónico no es válido.<br>';
+                    }
+            
+                    
+                    if (mensaje === '') {
+                        valid = false;
+                        errorElement.innerHTML += 'El mensaje es obligatorio.<br>';
+                    }
+            
+                    
+                    if (valid) {
+                        console.log("Formulario válido. Enviando datos...");
+                        
+                    } else {
+                        console.log("Faltan campos por completar o son incorrectos.");
+                    }
+                });
             });
-        });
-        </script>
+            </script>
+            
     </body>
-</html>
-    
+</html> 
        
     
